@@ -129,13 +129,13 @@ public class GraphSpawner : MonoBehaviour
             checkingPos = new Vector2(x, y);
             finalIndex = index;
 
-            if(takenPositions.Contains(checkingPos))
-            {
-                Room roomA = roomList[index];
-                Room roomB = roomList[takenPositions.IndexOf(checkingPos)];
-                roomA.setNeighborAndOpenWalls(roomB, direction);
-                roomB.setNeighborAndOpenWalls(roomA, GraphGameEventNames.oppositeDirection(direction));
-            }
+            //if(takenPositions.Contains(checkingPos))
+            //{
+            //    Room roomA = roomList[index];
+            //    Room roomB = roomList[takenPositions.IndexOf(checkingPos)];
+            //    roomA.setNeighborAndOpenWalls(roomB, direction);
+            //    roomB.setNeighborAndOpenWalls(roomA, GraphGameEventNames.oppositeDirection(direction));
+            //}
 
         } while (takenPositions.Contains(checkingPos) || x >= gridSizeX/2 || x < -gridSizeX / 2 || y >= gridSizeY / 2 || y < -gridSizeY/2); //make sure the position is valid
         return (checkingPos, direction, finalIndex);

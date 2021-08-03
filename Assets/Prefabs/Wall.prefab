@@ -915,6 +915,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8882662425003739729}
     m_Modifications:
+    - target: {fileID: 3532679169266075907, guid: 4cde3cb026a69514f83e655c2e9604a2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: bc1619608c953654a87973b4db5d5468, type: 2}
     - target: {fileID: 3765200422407350195, guid: 4cde3cb026a69514f83e655c2e9604a2, type: 3}
       propertyPath: m_Name
       value: Corridor
