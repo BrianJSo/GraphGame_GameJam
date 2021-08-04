@@ -23,7 +23,8 @@ public class PointsListener : MonoBehaviour
 
     void addPoint()
     {
-        points++;
+        points += 1;
+        Debug.Log("HERE");
         this.GetComponent<TextMeshProUGUI>().text = points.ToString();
     }
 

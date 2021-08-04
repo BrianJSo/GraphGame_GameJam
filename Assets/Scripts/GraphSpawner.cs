@@ -45,6 +45,7 @@ public class GraphSpawner : MonoBehaviour
         }
 
         CreateRooms();
+        SpawnOrbs();
         //foreach (var item in takenPositions)
         //{
         //    Debug.Log(item);
@@ -86,6 +87,26 @@ public class GraphSpawner : MonoBehaviour
 
             roomList.Add(nextRoom);
             takenPositions.Add(checkPos);
+        }
+    }
+
+    void SpawnOrbs()
+    {
+        int orbCount = Mathf.RoundToInt(numberOfRooms / 3);
+        List<int> randomList = new List<int>();
+        int currIndex;
+        while (randomList.Count < orbCount)
+        {
+            currIndex = Random.Range(0, numberOfRooms-1);
+            if (!randomList.Contains(currIndex))
+            {
+                randomList.Add(currIndex);
+            }
+        }
+
+        for (int i = 0; i < randomList.Count; i++)
+        {
+            roomList[randomList[i]].activateOrb();
         }
     }
 

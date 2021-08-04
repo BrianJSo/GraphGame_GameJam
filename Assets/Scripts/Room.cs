@@ -6,6 +6,7 @@ public class Room : MonoBehaviour
 {
     [SerializeField] private GameObject roomLight;
     [SerializeField] private GameObject ballSpawnPoint;
+    [SerializeField] private GameObject pointOrb;
 
     [SerializeField] private Wall upWall;
     [SerializeField] private Wall downWall;
@@ -63,6 +64,15 @@ public class Room : MonoBehaviour
     public void lightOff()
     {
         roomLight.SetActive(false);
+    }
+
+    public void activateOrb()
+    {
+        pointOrb.SetActive(true);
+    }
+    public void deactivateOrb()
+    {
+        pointOrb.SetActive(false);
     }
 
     public void setCoordinate(Vector2 newCoor)
