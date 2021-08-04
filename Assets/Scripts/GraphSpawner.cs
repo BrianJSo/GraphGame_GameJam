@@ -28,6 +28,7 @@ public class GraphSpawner : MonoBehaviour
 
     [SerializeField] private GameObject spawnOrigin;
     [SerializeField] private Room roomCopy;
+    [SerializeField] private GameObject ball;
     [SerializeField] private int numberOfRooms = 10;
     [SerializeField] private int gridSizeX = 8, gridSizeY = 8;
     [SerializeField] private List<Room> roomList;
@@ -48,6 +49,7 @@ public class GraphSpawner : MonoBehaviour
         //{
         //    Debug.Log(item);
         //}
+        this.ball.transform.position = firstRoom.getBallSpawnPoint();
     }
 
     void CreateRooms()

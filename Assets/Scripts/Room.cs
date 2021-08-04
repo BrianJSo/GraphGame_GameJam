@@ -5,6 +5,7 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     [SerializeField] private GameObject roomLight;
+    [SerializeField] private GameObject ballSpawnPoint;
 
     [SerializeField] private Wall upWall;
     [SerializeField] private Wall downWall;
@@ -30,6 +31,10 @@ public class Room : MonoBehaviour
         
     }
 
+    public Vector3 getBallSpawnPoint()
+    {
+        return ballSpawnPoint.transform.position;
+    }
 
     public Vector3 getNeighborSpawnPosition(string direction)
     {

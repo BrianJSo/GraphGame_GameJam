@@ -438,6 +438,7 @@ GameObject:
   - component: {fileID: 407792072}
   - component: {fileID: 407792073}
   - component: {fileID: 407792074}
+  - component: {fileID: 407792075}
   m_Layer: 0
   m_Name: RoomsParent
   m_TagString: Untagged
@@ -473,6 +474,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnOrigin: {fileID: 1042385623}
   roomCopy: {fileID: 8941308946235080655, guid: 65ab32eeccee1df44bef44c0cb49ebfb, type: 3}
+  ball: {fileID: 1572355439}
   numberOfRooms: 36
   gridSizeX: 6
   gridSizeY: 6
@@ -492,6 +494,22 @@ MonoBehaviour:
   speed: 75
   maxRotate: 45
   minRotate: -45
+--- !u!54 &407792075
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 407792071}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &471486585
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,7 +1895,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572355439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: 1.0400009, z: 1}
+  m_LocalPosition: {x: -5, y: 40.29, z: 1}
   m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 831617659}

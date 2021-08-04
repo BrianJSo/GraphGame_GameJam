@@ -86,7 +86,7 @@ public class SnowmanController : MonoBehaviour
         Vector3 curRotate = this.gameObject.transform.localRotation.eulerAngles;
 
         curRotate.x = (curRotate.x < 180) ? Mathf.Clamp(curRotate.x, 0, maxRotate) : Mathf.Clamp(curRotate.x, 360 - maxRotate, 360);
-        curRotate.y = (curRotate.y < 180) ? Mathf.Clamp(curRotate.y, 0, maxRotate) : Mathf.Clamp(curRotate.y, 360 - maxRotate, 360);
+        curRotate.y = 0f;
         curRotate.z = (curRotate.z < 180) ? Mathf.Clamp(curRotate.z, 0, maxRotate) : Mathf.Clamp(curRotate.z, 360 - maxRotate, 360);
 
         this.gameObject.transform.localRotation = Quaternion.Euler(curRotate);
