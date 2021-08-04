@@ -891,7 +891,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 71.795, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &200617124
@@ -3495,7 +3495,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 71.795, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &636562885
@@ -4090,7 +4090,7 @@ GameObject:
   - component: {fileID: 867763150}
   - component: {fileID: 867763149}
   m_Layer: 5
-  m_Name: Left Panel
+  m_Name: Instructions Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4113,7 +4113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -440.4569, y: 0}
+  m_AnchoredPosition: {x: 440.46, y: 0}
   m_SizeDelta: {x: -880.9139, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &867763149
@@ -4823,7 +4823,7 @@ GameObject:
   - component: {fileID: 949729025}
   - component: {fileID: 949729024}
   m_Layer: 5
-  m_Name: PointsLabel (4)
+  m_Name: finalScore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4845,7 +4845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 71.795, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &949729024
@@ -6810,7 +6810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 71.795, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1150050475
@@ -8207,7 +8207,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 71.795, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405623961
@@ -9972,8 +9972,9 @@ GameObject:
   - component: {fileID: 1858548402}
   - component: {fileID: 1858548404}
   - component: {fileID: 1858548403}
+  - component: {fileID: 1858548405}
   m_Layer: 5
-  m_Name: Right Panel
+  m_Name: Points Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9996,8 +9997,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 440.46, y: 0}
-  m_SizeDelta: {x: -880.9139, y: 0}
+  m_AnchoredPosition: {x: -503.56256, y: 0}
+  m_SizeDelta: {x: -1007.1191, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1858548403
 MonoBehaviour:
@@ -10037,6 +10038,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1858548401}
   m_CullTransparentMesh: 1
+--- !u!114 &1858548405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858548401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3e7ae17ad7465340828b8feaef58276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  curPointsText: {fileID: 636562886}
+  multiplierText: {fileID: 1150050476}
+  finalScoreText: {fileID: 949729025}
 --- !u!43 &1865072100
 Mesh:
   m_ObjectHideFlags: 0
