@@ -6,11 +6,13 @@ public class GraphGameEventNames
 {
     //Events
     public const string POINT_COLLECTED = "POINT_COLLECTED";
+    public const string TIME_UP = "TIME_UP";
     public const string LIGHT_UP = "LIGHT_UP";
     public const string BFS_BUTTON_CLICK = "BFS_BUTTON_CLICK";
     public const string DFS_BUTTON_CLICK = "DFS_BUTTON_CLICK";
 
     //Strings
+    public const string PREF_POINTS = "PREF_POINTS";
     public const string NORTH = "NORTH";
     public const string SOUTH = "SOUTH";
     public const string EAST = "EAST";
