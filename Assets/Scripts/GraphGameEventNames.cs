@@ -5,6 +5,7 @@ using UnityEngine;
 public class GraphGameEventNames
 {
     //Events
+    public const string POINT_COLLECTED = "POINT_COLLECTED";
     public const string LIGHT_UP = "LIGHT_UP";
     public const string BFS_BUTTON_CLICK = "BFS_BUTTON_CLICK";
     public const string DFS_BUTTON_CLICK = "DFS_BUTTON_CLICK";
