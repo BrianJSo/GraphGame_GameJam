@@ -27,6 +27,7 @@ public class CountdownTimer : MonoBehaviour
         if(currentTime <= 0)
         {
             pachinkoTimePanel.SetActive(true);
+            EventBroadcaster.Instance.PostEvent(GraphGameEventNames.TIME_UP);
         }
 
         if (currentTime <= -2)

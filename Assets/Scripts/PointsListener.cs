@@ -18,6 +18,7 @@ public class PointsListener : MonoBehaviour
 
     void savePoints()
     {
+        Debug.Log("saving points");
         PlayerPrefs.SetInt(GraphGameEventNames.PREF_POINTS, points);
     }
 
@@ -25,7 +26,7 @@ public class PointsListener : MonoBehaviour
     {
         points += 1;
         Debug.Log("HERE");
-        this.GetComponent<TextMeshProUGUI>().text = points.ToString();
+        this.GetComponent<TextMeshProUGUI>().text = points.ToString() + " Points";
     }
 
     private void OnDestroy()
