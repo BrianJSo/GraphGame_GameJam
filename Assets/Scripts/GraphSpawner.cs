@@ -97,7 +97,7 @@ public class GraphSpawner : MonoBehaviour
         int currIndex;
         while (randomList.Count < orbCount)
         {
-            currIndex = Random.Range(0, numberOfRooms-1);
+            currIndex = Random.Range(1, numberOfRooms-1);
             if (!randomList.Contains(currIndex) )
             {
                 randomList.Add(currIndex);
