@@ -8,6 +8,7 @@ public class PachinkoPoints : MonoBehaviour
     [SerializeField] private TextMeshProUGUI curPointsText;
     [SerializeField] private TextMeshProUGUI multiplierText;
     [SerializeField] private TextMeshProUGUI finalScoreText;
+    [SerializeField] private GameObject endGamePanel;
 
     private int curPoints;
     private int multiplier;
@@ -28,6 +29,7 @@ public class PachinkoPoints : MonoBehaviour
         finalScore = multiplier * curPoints;
         multiplierText.text = multiplier.ToString();
         finalScoreText.text = " = " + finalScore.ToString();
+        endGamePanel.SetActive(true);
     }
 
     private void OnDestroy()
