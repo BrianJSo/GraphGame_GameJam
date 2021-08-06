@@ -23,10 +23,11 @@ public class PachinkoPoints : MonoBehaviour
     }
 
     void computeScore(Parameters parameters)
-    {
+    {   
         multiplier = parameters.GetIntExtra(GraphGameEventNames.PACHINKO_MULTIPLIER, 1);
         finalScore = multiplier * curPoints;
-        finalScoreText.text = finalScore.ToString();
+        multiplierText.text = multiplier.ToString();
+        finalScoreText.text = " = " + finalScore.ToString();
     }
 
     private void OnDestroy()
